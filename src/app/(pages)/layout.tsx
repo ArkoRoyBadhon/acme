@@ -9,7 +9,9 @@ export default function MainLayout({
 }>) {
   return (
     <>
+        <div className="custom_container">
         <HeaderSection />
+        </div>
         {children}
     </>
   );

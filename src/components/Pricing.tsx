@@ -41,12 +41,12 @@ const PricingSection = () => {
 
   return (
     <section>
-      <div className="px-[20px] md:px-[40px]">
-        <h4 className="text-[32px] text-bold leading-[32px] text-textBlack2 font-bold">
+      <div className="px-[20px] md:px-[40px] pt-[80px]">
+        <h4 className="text-[32px] text-bold leading-[32px] text-textBlack2 font-bold tracking-[-0.96px] ml-[-10px]">
           Our Pricing
         </h4>
       </div>
-      <div className="flex flex-col lg:flex-row justify-between gap-[32px] px-[34px] mt-[9px]">
+      <div className="flex flex-col lg:flex-row justify-between gap-[32px] px-[34px] mt-[20px]">
         <div className="w-full md:w-[625px] ">
           <div className="flex flex-wrap md:flex-nowrap gap-[8px]">
             <button className="text-[14px] font-medium leading-[24px] text-white bg-textBlack2 px-[16px] py-[8px] rounded-[6px]">
@@ -64,7 +64,7 @@ const PricingSection = () => {
                   <div
                     key={index}
                     onClick={() => handleCardSelect(index)}
-                    className={`flex px-[40px] h-[65px] justify-between items-center pricingShadow rounded-[8px] pricingShadow  ${selectedCardIndex === index ? "bg-[#f9fbff] border border-lightBlue" : "bg-white"}`}
+                    className={`flex ps-[56px] pe-[30px] h-[65px] justify-between items-center pricingShadow rounded-[8px] pricingShadow  ${selectedCardIndex === index ? "bg-[#f9fbff] border border-lightBlue" : "bg-white"}`}
                   >
                     <div className="w-[109px] ">
                       <span className="text-textBlack2 text-[32px] font-semibold">${item?.price}</span>
@@ -89,7 +89,7 @@ const PricingSection = () => {
               })}
           </div>
         </div>
-        <div className="p-[32px] w-full lg:w-[284px] h-fit bg-white rounded-[12px] pricingDetailShadow">
+        <div className="p-[32px] w-full lg:w-[348px] h-fit bg-white rounded-[12px] pricingDetailShadow">
           <div className="flex items-center gap-[12px]">
             <div className="w-[32px] h-[32px] bg-textBlack rounded-[8px] custom_shadow customCenter">
               <LogoIcon />
@@ -103,7 +103,7 @@ const PricingSection = () => {
               </p>
             </div>
           </div>
-          <div className="pt-[40px] ">
+          <div className="pt-[32px] flex flex-col gap-[6px]">
             {processorDta &&
               processorDta?.map((item) => {
                 return (
@@ -126,7 +126,7 @@ const PricingSection = () => {
           </button>
         </div>
       </div>
-      <div className="text-center text-lightGray text-[14px] leading-[150%] mt-[29px]">
+      <div className="text-center text-lightGray text-[14px] leading-[150%] mt-[13px]">
       *All pricing is in USD and renews automatically unless cancelled. 
       </div>
     </section>

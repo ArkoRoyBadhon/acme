@@ -7,7 +7,7 @@ import Offer from "@/components/offer";
 export default function Home() {
   return (
     <main>
-      <div className="custom-container">
+      <div className="custom-container custom_spacing">
         <Offer />
         <BannerSection />
         <ServicesSection />
